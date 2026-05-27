@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf dist/*)",
+      "Bash(tar -xf /tmp/electron.zip -C dist)",
+      "Bash(unzip -o /tmp/electron.zip -d dist)",
+      "Bash(python -m pip --version)",
+      "Bash(python -c \"import ssl, sqlite3, tkinter, urllib.request, json, pathlib, asyncio; print\\('所有核心标准库导入成功'\\)\")",
+      "Bash(python -m venv --help)",
+      "Bash(python -c \"import sys; print\\('Python 路径:', sys.executable\\); print\\('平台:', sys.platform\\)\")",
+      "Bash(python -m pip cache dir)",
+      "Bash(python -m pip cache info)"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄时钟</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="app">
+    <div class="header">
+      <div class="brand">
+        <span class="brand-icon">//</span>
+        <span class="brand-text">POMODORO.sys</span>
+      </div>
+      <div class="stats">
+        <span class="stats-label">SESSIONS</span>
+        <span class="stats-count" id="stats-count">00</span>
+      </div>
+    </div>
+
+    <div class="main-display">
+      <div class="status-indicator" id="status-indicator">
+        <div class="led-ring">
+          <div class="led led-1"></div>
+          <div class="led led-2"></div>
+          <div class="led led-3"></div>
+          <div class="led led-4"></div>
+          <div class="led led-5"></div>
+          <div class="led led-6"></div>
+          <div class="led led-7"></div>
+          <div class="led led-8"></div>
+        </div>
+        <div class="core" id="core"></div>
+      </div>
+
+      <div class="time-display" id="time-display">25:00</div>
+      <div class="mode-label" id="mode-label">FOCUS MODE</div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-markers">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="mode-tabs">
+      <button class="mode-tab active" data-mode="work">FOCUS</button>
+      <button class="mode-tab" data-mode="shortBreak">SHORT</button>
+      <button class="mode-tab" data-mode="longBreak">LONG</button>
+    </div>
+
+    <div class="controls">
+      <button class="btn-icon" id="btn-reset" title="重置">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="1 4 1 10 7 10"></polyline>
+          <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+        </svg>
+      </button>
+      <button class="btn-main" id="btn-main">
+        <span class="play-icon" id="play-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </span>
+        <span class="pause-icon" id="pause-icon" style="display:none">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+          </svg>
+        </span>
+      </button>
+      <button class="btn-icon" id="btn-skip" title="跳过">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 4 15 12 5 20 5 4"></polygon>
+          <line x1="19" y1="5" x2="19" y2="19"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="footer">
+      <div class="sound-toggle" id="btn-sound">
+        <span class="sound-label">AUDIO</span>
+        <div class="sound-led" id="sound-led"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
