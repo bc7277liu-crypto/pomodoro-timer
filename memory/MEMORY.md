@@ -1,0 +1,2 @@
+- [Frontend Design Skill](user-frontend-design.md) — Anthropic official guide for distinctive, production-grade UIs with bold aesthetics
+- [Frontend UI Trends 2025-2026](reference-frontend-ui-trends-2025-2026.md) — CSS design trends: Liquid Glass, Neumorphism 2.0, Cyberpunk

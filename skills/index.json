@@ -1,0 +1,18 @@
+{
+  "updatedAt": "2026-05-28T05:43:53.381Z",
+  "count": 2,
+  "skills": [
+    {
+      "name": "find-skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities.",
+      "directory": "find-skills",
+      "path": "skills/find-skills/SKILL.md"
+    },
+    {
+      "name": "generate-image",
+      "description": "Generate images using AI (DALL-E 3) via OpenAI API. Use when the user wants to create an image, draw something, or generate visual assets.",
+      "directory": "generate-image",
+      "path": "skills/generate-image/SKILL.md"
+    }
+  ]
+}
